@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <style>
+    /* --normal size--
+    size
+    16px/18px/20px/24px/30px/32px
+    line height
+    1.5/2
+
+    --large text--
+    size
+    52px/62px/74px/86px
+    line height
+    1.2
+    main: #087f5b
+    grey:#343a40
+    light grey:#495057
+    */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Inter", sans-serif;
+      line-height: 1;
+      color: #343a40;
+    }
+    .accordion {
+      width: 700px;
+      margin: 200px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .item {
+      padding: 24px;
+      box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      row-gap: 32px;
+      column-gap: 24px;
+      align-items: center;
+    }
+    .number,
+    .title {
+      font-size: 24px;
+
+      font-weight: 500;
+    }
+    .number .title {
+      grid-column: 2/3;
+    }
+    .number {
+      color: #ced4da;
+      grid-column: 1/2;
+    }
+    .title {
+      color: #087f5b;
+    }
+    .icon {
+      height: 24px;
+      width: 24px;
+      color: #087f5b;
+      grid-column: 3/4;
+    }
+    .hidden-box {
+      font-size: 16px;
+      grid-column: 2/3;
+      display: none;
+    }
+    .hidden-box p {
+      line-height: 1.5;
+      margin-bottom: 24px;
+    }
+    .hidden-box ul {
+      margin-left: 20px;
+      color: #495057;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .accordion .open .number {
+      color: #087f5b;
+    }
+    .accordion .open .hidden-box {
+      display: block;
+    }
+    .accordion .open {
+      border-top: 4px solid #087f5b;
+    }
+  </style>
+  <body>
+    <div class="accordion">
+      <div class="item open">
+        <p class="number">02</p>
+        <p class="title">How long do I have to return my car</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
+            ratione, quis omnis esse fugit laboriosam, ipsum minus earum
+            molestias cupiditate a? Quibusdam minima exercitationem obcaecati
+            labore recusandae incidunt expedita dolorem.
+          </p>
+          <ul>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+            <li>quis omnis esse fugit laboriosam, ipsum minus earum</li>
+            <li>Quibusdam minima exercitationem obcaecati</li>
+            <li>labore recusandae incidunt expedita dolorem.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="item">
+        <p class="number">02</p>
+        <p class="title">How long do I have to return my car</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
+            ratione, quis omnis esse fugit laboriosam, ipsum minus earum
+            molestias cupiditate a? Quibusdam minima exercitationem obcaecati
+            labore recusandae incidunt expedita dolorem.
+          </p>
+          <ul>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+            <li>quis omnis esse fugit laboriosam, ipsum minus earum</li>
+            <li>Quibusdam minima exercitationem obcaecati</li>
+            <li>labore recusandae incidunt expedita dolorem.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="item">
+        <p class="number">02</p>
+        <p class="title">How long do I have to return my car</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
+            ratione, quis omnis esse fugit laboriosam, ipsum minus earum
+            molestias cupiditate a? Quibusdam minima exercitationem obcaecati
+            labore recusandae incidunt expedita dolorem.
+          </p>
+          <ul>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+            <li>quis omnis esse fugit laboriosam, ipsum minus earum</li>
+            <li>Quibusdam minima exercitationem obcaecati</li>
+            <li>labore recusandae incidunt expedita dolorem.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
