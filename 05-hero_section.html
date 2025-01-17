@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Rubik", sans-serif;
+      }
+      nav {
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        width: 1200px;
+        margin: 0 auto;
+        padding-top: 14px;
+      }
+      header {
+        margin-bottom: 120px;
+        height: 100vh;
+        color: #fff;
+        background-image: linear-gradient(
+            hsla(0, 0%, 0%, 0.366),
+            hsla(0, 0%, 0%, 0.366)
+          ),
+          url(/hero.jpg);
+        background-size: cover;
+        position: relative;
+      }
+      h1 {
+        font-size: 48px;
+        font-weight: 700;
+      }
+      p {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.5;
+      }
+      .btn:link,
+      .btn:visited {
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: none;
+        color: #fff;
+        border-radius: 8px;
+        padding: 12px 24px;
+        background-color: orangered;
+        cursor: pointer;
+      }
+      .btn:hover,
+      .btn:active {
+        text-decoration: none;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      h2 {
+        font-size: 36px;
+        font-weight: 700;
+      }
+
+      .container {
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 46px;
+      }
+      .header-container {
+        width: 1200px;
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .header-container-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 46px;
+        padding-right: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>LOGO</div>
+        <div>NAVIGATION</div>
+      </nav>
+      <div class="header-container">
+        <div class="header-container-inner">
+          <h1>A healthy meal delivered to your door,every single day</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum,
+            blanditiis! Cupiditate vel nemo nisi molestiae ipsum pariatur
+            laborum voluptas sed illum voluptatibus illo fugiat atque culpa quae
+            dolore, neque a!
+          </p>
+          <a href="#" class="btn"> Start eating well</a>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <h2>Some random heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+          similique pariatur architecto, eaque ea quasi ab nesciunt illum fugit
+          eius velit voluptates itaque enim aliquid accusantium ullam. Corporis,
+          officiis dicta. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Officiis, eligendi neque sint voluptatem cupiditate numquam
+          voluptates. Unde quaerat veritatis sunt ipsum tempora corporis facere
+          molestias possimus, tempore, pariatur nobis reprehenderit.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
